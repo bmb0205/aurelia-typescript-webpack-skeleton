@@ -8,6 +8,7 @@ import * as Bluebird from 'bluebird';
 import 'materialize-css';
 import 'aurelia-materialize-bridge';
 import 'aurelia-dialog';
+import 'aurelia-validation';
 
 // remove out if you don't want a Promise polyfill (remove also from webpack.config.js)
 Bluebird.config({ warnings: { wForgottenReturn: false } });
@@ -17,7 +18,7 @@ export async function configure(aurelia: Aurelia) {
     .standardConfiguration()
     .developmentLogging()
     .plugin(PLATFORM.moduleName('aurelia-dialog'))
-
+    .plugin(PLATFORM.moduleName('aurelia-validation'))
     .plugin(PLATFORM.moduleName('aurelia-materialize-bridge'), bridge => bridge
       .useAutoComplete()
       .useBadge()
