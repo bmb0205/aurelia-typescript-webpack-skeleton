@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WelcomeComponent should render correctly 1`] = `
+"<body><div><welcome class=\\"au-target\\" au-target-id=\\"1\\">
+    <div class=\\"button-row\\">
+      <button md-button=\\"large: true;\\">I'm a large button</button>
+      <button md-button=\\"flat: true; large: true;\\">I'm a large flat button</button>
+    </div>
+</welcome></div></body>"
+`;
